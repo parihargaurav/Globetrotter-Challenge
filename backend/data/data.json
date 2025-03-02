@@ -1,0 +1,62 @@
+ [
+  {
+    "clue": "This city is home to a famous tower that sparkles every night. Known as the 'City of Love' and a hub for fashion and art.",
+    "options": ["Paris", "Rome", "Venice", "Barcelona"],
+    "correctAnswer": "Paris",
+    "funFact": "The Eiffel Tower was supposed to be dismantled after 20 years but was saved because it was useful for radio transmissions!"
+  },
+  {
+    "clue": "This city has the busiest pedestrian crossing in the world. You can visit an entire district dedicated to anime, manga, and gaming.",
+    "options": ["Tokyo", "Seoul", "Shanghai", "Osaka"],
+    "correctAnswer": "Tokyo",
+    "funFact": "Tokyo was originally a small fishing village called Edo before becoming the bustling capital it is today!"
+  },
+  {
+    "clue": "Home to a green statue gifted by France in the 1800s. Nicknamed 'The Big Apple' and known for its Broadway theaters.",
+    "options": ["Los Angeles", "Chicago", "New York", "Miami"],
+    "correctAnswer": "New York",
+    "funFact": "The Statue of Liberty was originally a copper color before oxidizing to its iconic green patina."
+  },
+  {
+    "clue": "This city was once divided by a wall during the Cold War. It is home to the famous Brandenburg Gate.",
+    "options": ["Munich", "Frankfurt", "Berlin", "Hamburg"],
+    "correctAnswer": "Berlin",
+    "funFact": "Berlin has more bridges than Venice, with over 1,700 in total."
+  },
+  {
+    "clue": "This city is home to a historic red fort and one of the tallest brick minarets in the world. It serves as the capital of a country with over 1.4 billion people.",
+    "options": ["Mumbai", "Delhi", "Kolkata", "Chennai"],
+    "correctAnswer": "Delhi",
+    "funFact": "Delhi's metro is one of the largest and busiest in the world."
+  },
+  {
+    "clue": "This city is famous for its football teams and musical heritage. It was a major center during the Industrial Revolution.",
+    "options": ["London", "Manchester", "Liverpool", "Birmingham"],
+    "correctAnswer": "Manchester",
+    "funFact": "The first programmable computer was invented here."
+  },
+  {
+    "clue": "This city is home to one of the most famous football clubs in the world and has the largest royal palace in Western Europe.",
+    "options": ["Barcelona", "Madrid", "Lisbon", "Rome"],
+    "correctAnswer": "Madrid",
+    "funFact": "Madrid is the highest capital city in Europe."
+  },
+  {
+    "clue": "This city is home to Bollywood, one of the largest film industries in the world. It has the world's largest slum and some of the most expensive real estate.",
+    "options": ["Delhi", "Mumbai", "Bangalore", "Hyderabad"],
+    "correctAnswer": "Mumbai",
+    "funFact": "Mumbai was originally a group of seven islands before land reclamation joined them together."
+  },
+  {
+    "clue": "This city is home to Hollywood, the global center of the film industry. It has some of the most famous beaches in the world.",
+    "options": ["New York", "San Francisco", "Los Angeles", "Las Vegas"],
+    "correctAnswer": "Los Angeles",
+    "funFact": "Los Angeles was originally part of Mexico before becoming part of the United States."
+  },
+  {
+    "clue": "This city is home to the tallest building in the world and a man-made island shaped like a palm tree.",
+    "options": ["Abu Dhabi", "Doha", "Dubai", "Manama"],
+    "correctAnswer": "Dubai",
+    "funFact": "ATMs in Dubai dispense gold bars instead of cash."
+  }
+]
