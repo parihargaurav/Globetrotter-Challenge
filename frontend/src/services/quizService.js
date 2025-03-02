@@ -32,12 +32,3 @@ export const submitAnswer = async (answerData, token) => {
   }
 };
 
-export const getLeaderboard = async () => {
-  try {
-    const response = await fetch(`${API_URL}/leaderboard`);
-    return response.json();
-  } catch (error) {
-    console.error("Error fetching leaderboard:", error);
-    return { leaderboard: [] };
-  }
-};
