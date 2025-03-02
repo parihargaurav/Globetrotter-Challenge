@@ -57,10 +57,10 @@ npm run dev
 Visit `http://localhost:5173` in your browser to start playing!
 
 ## 📸 Screenshots
-(Add screenshots/gifs of the app here)
+![Screenshot (33)](https://github.com/user-attachments/assets/29645be8-03a2-41fa-92df-d3dbfa2bab12)
+![Screenshot (32)](https://github.com/user-attachments/assets/1626e57b-0f38-407d-a49a-7b2407d17f34)
+![Screenshot (31)](https://github.com/user-attachments/assets/4596391c-365e-403b-83c8-372d0bce342b)
 
-## 🌍 Live Demo
-[Click here to try the app!](https://your-live-demo-link.com)
 
 ## 🤝 Contribution
 If you'd like to contribute, feel free to fork the repository and submit a pull request!
