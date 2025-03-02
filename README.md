@@ -14,17 +14,8 @@ Globetrotter is a full-stack MERN (MongoDB, Express.js, React, Node.js) web appl
 - **Frontend:** React (Vite), Tailwind CSS
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
-- **Other Tools:** JWT Authentication, React-Icons, Confetti Animations
+- **Other Tools:**  React-Icons, Confetti Animations
 
-## 📂 Project Structure
-```
-Globetrotter/
-│── client/ (Frontend - React)
-│── server/ (Backend - Node.js + Express)
-│── database/ (MongoDB Models)
-│── services/ (API Integration)
-│── README.md (Project Documentation)
-```
 
 ## 🚀 Getting Started
 ### 1. Clone the Repository
@@ -36,11 +27,11 @@ cd globetrotter
 ### 2. Install Dependencies
 ```sh
 # Install frontend dependencies
-cd client
+cd frontend
 npm install
 
 # Install backend dependencies
-cd ../server
+cd ../backend
 npm install
 ```
 
@@ -48,18 +39,17 @@ npm install
 Create a `.env` file in the `server/` directory and configure:
 ```sh
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
 PORT=5000
 ```
 
 ### 4. Run the Application
 ```sh
 # Start the backend server
-cd server
+cd backend
 npm start
 
 # Start the frontend
-cd client
+cd frontend
 npm run dev
 ```
 
