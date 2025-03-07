@@ -12,7 +12,7 @@ app.use(
   cors({
     origin: "https://globetrotter-challenge-2-frontend.onrender.com",
     methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true
   })
 );
 
