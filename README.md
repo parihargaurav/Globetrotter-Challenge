@@ -2,6 +2,8 @@
 
 Globetrotter is a full-stack MERN (MongoDB, Express.js, React, Node.js) web application that challenges users to guess destinations based on cryptic clues. It provides an engaging experience with multiple-choice questions, fun facts, animations, and score tracking.
 
+## Deployment Link: https://globetrotter-challenge-2-frontend.onrender.com/
+
 ## 🏆 Key Features
 - **User Authentication:** Sign up/login with a username to track progress.
 - **Dynamic Quiz System:** Random destination-based questions with multiple-choice options.
