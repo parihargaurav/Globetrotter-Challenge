@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5001/api/quiz"; // Updated to port 5001
+const API_URL = "https://globetrotter-challenge-2-backend.onrender.com/api/quiz";
 
 export const getQuestions = async () => {
   try {
