@@ -8,4 +8,7 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
+  server: {
+    historyApiFallback: true, // Ensure React Router works properly
+  },
 });
