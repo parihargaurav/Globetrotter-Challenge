@@ -14,10 +14,10 @@ const App = () => {
         <Navbar />
         <main className="flex-grow flex flex-col">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/quiz" element={<Quiz />} />
-            <Route path="/invite" element={<Invite />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="#/" element={<Home />} />
+            <Route path="#/quiz" element={<Quiz />} />
+            <Route path="#/invite" element={<Invite />} />
+            <Route path="#/*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
