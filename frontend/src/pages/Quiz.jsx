@@ -92,7 +92,7 @@ const Quiz = () => {
   const handleChallengeFriend = () => {
     const link = `${
       window.location.origin
-    }/invite?username=${encodeURIComponent(username)}&score=${score}`;
+    }/#/invite?username=${encodeURIComponent(username)}&score=${score}`;
     setInviteLink(link);
   };
 
@@ -191,8 +191,7 @@ const Quiz = () => {
       )}
       <p className="mt-6 text-lg font-bold">Score: {score}</p>
 
-      {/* Challenge a Friend Feature */}
-      {/* Challenge a Friend Feature */}
+      {/* Challenge a Friend Feature  */}
       <div className="mt-4 flex flex-col items-center">
         {inviteLink ? (
           <>

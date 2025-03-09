@@ -13,7 +13,7 @@ const Invite = () => {
     if (username.trim() === "") return alert("Please enter a username!");
     localStorage.setItem("quizUsername", username);
     setIsPlaying(true);
-    window.location.href = "/quiz";
+    window.location.href = "/#/quiz";
   };
 
   return (
