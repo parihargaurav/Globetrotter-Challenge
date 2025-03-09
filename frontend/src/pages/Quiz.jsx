@@ -15,12 +15,12 @@ const Quiz = () => {
   const [funFact, setFunFact] = useState("");
   const [inviteLink, setInviteLink] = useState("");
   const [isQuizCompleted, setIsQuizCompleted] = useState(false);
-    const [usedUsernames, setUsedUsernames] = useState([]);
-
+  const [usedUsernames, setUsedUsernames] = useState([]);
 
   useEffect(() => {
     localStorage.removeItem("quizUsername");
-    const storedUsernames = JSON.parse(localStorage.getItem("usedUsernames")) || [];
+    const storedUsernames =
+      JSON.parse(localStorage.getItem("usedUsernames")) || [];
     setUsedUsernames(storedUsernames);
   }, []);
   useEffect(() => {
@@ -30,7 +30,10 @@ const Quiz = () => {
         if (Array.isArray(data)) {
           setQuestions(data);
         } else {
-          console.error("Invalid questions response. Expected an array, but got:", data);
+          console.error(
+            "Invalid questions response. Expected an array, but got:",
+            data
+          );
         }
       } catch (error) {
         console.error("Error fetching questions:", error);
@@ -39,7 +42,7 @@ const Quiz = () => {
     fetchQuestions();
   }, []);
 
- const handleStartGame = () => {
+  const handleStartGame = () => {
     if (username.trim() === "") {
       alert("Please enter a username!");
       return;
@@ -55,7 +58,6 @@ const Quiz = () => {
     setIsPlaying(true);
     setIsQuizCompleted(false);
   };
-
 
   const handleAnswer = (selectedOption) => {
     if (questions.length === 0) return;
@@ -88,7 +90,9 @@ const Quiz = () => {
   };
 
   const handleChallengeFriend = () => {
-    const link = `${window.location.origin}/invite?username=${encodeURIComponent(username)}&score=${score}`;
+    const link = `${
+      window.location.origin
+    }/invite?username=${encodeURIComponent(username)}&score=${score}`;
     setInviteLink(link);
   };
 
@@ -103,7 +107,10 @@ const Quiz = () => {
       return;
     }
     const whatsappMessage = `Hey! I just played this fun quiz game and scored *${score}* points! Can you beat my score? 😎\nJoin here: ${inviteLink}`;
-    window.open(`https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`, "_blank");
+    window.open(
+      `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`,
+      "_blank"
+    );
   };
 
   const handleRestart = () => {
@@ -140,7 +147,9 @@ const Quiz = () => {
     return (
       <div className="p-6 text-center">
         <h1 className="text-2xl font-bold">Quiz Completed!</h1>
-        <p className="mt-4 text-lg font-semibold">Your Final Score: {score}/{questions.length}</p>
+        <p className="mt-4 text-lg font-semibold">
+          Your Final Score: {score}/{questions.length}
+        </p>
         <button
           onClick={handleRestart}
           className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
@@ -174,28 +183,23 @@ const Quiz = () => {
             onClick={handleNextQuestion}
             className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
           >
-            {currentIndex < questions.length - 1 ? "Next Question" : "Finish Quiz"}
+            {currentIndex < questions.length - 1
+              ? "Next Question"
+              : "Finish Quiz"}
           </button>
         </div>
       )}
       <p className="mt-6 text-lg font-bold">Score: {score}</p>
 
       {/* Challenge a Friend Feature */}
+      {/* Challenge a Friend Feature */}
       <div className="mt-4 flex flex-col items-center">
-        {inviteLink && (
-          <div className="mb-2 p-2 border border-gray-300 rounded-lg text-sm break-all">
-            {inviteLink}
-          </div>
-        )}
-        <div className="flex gap-4">
-          <button
-            onClick={handleChallengeFriend}
-            className="px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600"
-          >
-            🎉 Generate Invite Link
-          </button>
-          {inviteLink && (
-            <>
+        {inviteLink ? (
+          <>
+            <div className="mb-2 p-2 border border-gray-300 rounded-lg text-sm break-all">
+              {inviteLink}
+            </div>
+            <div className="flex gap-4">
               <button
                 onClick={copyToClipboard}
                 className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 flex items-center gap-2"
@@ -208,9 +212,16 @@ const Quiz = () => {
               >
                 <FaWhatsapp /> WhatsApp
               </button>
-            </>
-          )}
-        </div>
+            </div>
+          </>
+        ) : (
+          <button
+            onClick={handleChallengeFriend}
+            className="px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600"
+          >
+            🎉 Generate Invite Link
+          </button>
+        )}
       </div>
     </div>
   );
